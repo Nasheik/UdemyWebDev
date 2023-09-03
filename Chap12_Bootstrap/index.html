@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<!-- A row is 12 units -->
+<!-- https://icons.getbootstrap.com/?q=search -->
+<body>
+
+
+    <div class="container">
+        <h1 class="display-1">Utilities</h1>
+        <div class="row">
+            <div class="col-md-4 border rounded border-success shadow-lg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga fugit et molestiae voluptatum iure minus facere voluptatibus ducimus reiciendis tempora inventore rerum aspernatur, sint qui ullam, ipsa modi? Eos, numquam?
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary p-0">Padding 0</button>
+            <button class="btn btn-primary p-1">Padding 1</button>
+            <button class="btn btn-primary p-2">Padding 2</button>
+            <button class="btn btn-primary p-3">Padding 3</button>
+            <button class="btn btn-primary p-4">Padding 4</button>
+            <button class="btn btn-primary p-5">Padding 5</button>
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-primary p-0 pt-5">Padding 0</button>
+            <button class="btn btn-primary p-0 pl-5">Padding 1</button>
+            <button class="btn btn-primary p-0 pb-5">Padding 2</button>
+            <button class="btn btn-primary p-0 pr-5">Padding 3</button>
+            <button class="btn btn-primary p-0 px-5">Padding 4</button>
+            <button class="btn btn-primary p-0 py-5">Padding 5</button>
+        </div>
+        <button class="btn btn-danger p-0 p-sm-1 p-md-2 p-lg-3">Changes</button>
+    </div>
+
+
+
+    <br>
+    <hr>
+    <hr>
+    <hr>
+
+
+
+
+    <div class="container">
+        <h1 class="display-1">Icons <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+            <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+            <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+          </svg></h1>
+        <button class="btn btn-lg btn-danger">Delete <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+          </svg></button>
+
+
+          <div class="row">
+            <div class="col-md-4">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </div>
+          </div>
+    </div>
+
+
+
+    <br>
+    <hr>
+    <hr>
+    <hr>
+
+
+    <h1 class="display-1 text-center">Navbars</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="expandme">
+            <div class="navbar-nav">
+                <a href="Home" class="nav-item nav-link">Home</a>
+                <a href="Home" class="nav-item nav-link">About</a>
+                <a href="Home" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias cum, dicta mollitia adipisci officia saepe, aperiam illo nemo a ut amet suscipit nulla maiores, deleniti quisquam. Impedit quod natus voluptate!
+        Magnam ut porro esse totam necessitatibus voluptatum nisi eaque quidem molestias magni, perferendis, reprehenderit amet deserunt assumenda. Quisquam iure at alias culpa ea impedit accusamus eveniet corporis hic reprehenderit? Culpa.
+        Cumque autem eligendi aspernatur vel. Nisi nulla fugit aliquam est porro, magnam distinctio laborum expedita cum itaque
+    </div>
+
+
+    <br>
+    <hr>
+    <hr>
+    <hr>
+
+
+    <div class="container">
+        <h1 class="display-2">Forms</h1>
+        <form action="#nowhere">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="email" class="form-control" id="address" placeholder="926 Chicken Street">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="email" class="form-control" id="city">
+                </div>
+                <div class="form-group col-md-3 col-6">
+                    <label for="state">State</label>
+                    <select name="state" id="state" class="form-control">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3 col-6">
+                    <label for="zipcode">Zip Code</label>
+                    <input type="email" class="form-control" id="zipcode">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Register</button>
+            
+        </form>
+    </div>
+
+    <br>
+    <hr>
+    <hr>
+    <hr>
+
+    <div class="container mb-5">
+        <h1 class="display1 text-center text-primary">The Grid System</h1>
+        <div class="row">
+            <div class="col-2 bg-success">I am 2 units</div>
+            <div class="col-8 bg-info">I am 8 units</div>
+            <div class="col-2 bg-success">I am 2 units</div>
+        </div>
+        <div class="row">
+            <div class="col bg-success">I am auto</div>
+            <div class="col bg-warning">I am auto</div>
+            <div class="col-7 bg-info">I am 7 units</div>
+            <div class="col bg-success">I am auto</div>
+        </div>
+        <h2 class="display-4">Responsive Grid</h2>
+        <div class="row">
+            <div class="col-md-6 col-xl-3 bg-info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque minima voluptas asperiores amet, ab optio ullam maxime mollitia laborum pariatur saepe dolor accusamus tenetur distinctio, officiis quasi aut eveniet? Soluta?
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque minima voluptas asperiores amet, ab optio ullam maxime mollitia laborum pariatur saepe dolor accusamus tenetur distinctio, officiis quasi aut eveniet? Soluta?
+            </div>
+            <div class="col-md-6 col-xl-3 bg-info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque minima voluptas asperiores amet, ab optio ullam maxime mollitia laborum pariatur saepe dolor accusamus tenetur distinctio, officiis quasi aut eveniet? Soluta?
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque minima voluptas asperiores amet, ab optio ullam maxime mollitia laborum pariatur saepe dolor accusamus tenetur distinctio, officiis quasi aut eveniet? Soluta?
+            </div>
+
+            <div class="row">
+                <!-- add no-gutter class to remove spaces between images -->
+                <div class="col-xl-4 col-md-6">
+                    <img class="img-fluid" src="https://plus.unsplash.com/premium_photo-1673548917237-0e02a90d1b16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1486663845017-3eedaa78617f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="">
+                </div>
+            </div>
+
+            <div class="row align-items-end">
+                <div class="col bg-danger">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at ad sequi eius modi similique reprehenderit perferendis repellat, iste ea aliquam ipsum aspernatur veritatis? Amet facilis nam modi quod aut.
+                </div>
+                <div class="col bg-warning">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dicta reprehenderit deserunt consequuntur rerum temporibus nobis obcaecati culpa earum suscipit, ea ipsam odio eligendi unde, impedit maiores deleniti accusantium cupiditate!
+                </div>
+                <div class="col bg-success">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ea doloremque illo harum rem sed dolore, soluta quis. Placeat officia sed corrupti laudantium unde maxime deserunt quo necessitatibus et aut. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas reiciendis maxime unde voluptatibus ducimus fugiat repellendus illum temporibus praesentium corrupti dicta architecto modi autem natus, optio quaerat asperiores eius vitae.
+                </div>
+                <div class="col bg-info align-self-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laudantium ex natus impedit, ipsa rerum quas molestiae optio consequatur omnis ipsam explicabo sed delectus expedita mollitia neque eaque sint libero.
+                </div>
+            </div>
+            
+            <br>
+
+            <h3>Justify Content</h3>
+            <div class="row border justify-content-center justify-content-lg-start justify-content-xl-between">
+                <div class="col-md-4 bg-primary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque numquam placeat voluptas doloremque atque quod enim sapiente. Veniam rem ipsum consequuntur doloremque odio incidunt sit! Doloribus delectus maxime modi assumenda!
+                </div>
+                <div class="col-md-4 bg-info">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque numquam placeat voluptas doloremque atque quod enim sapiente. Veniam rem ipsum consequuntur doloremque odio incidunt sit! Doloribus delectus maxime modi assumenda!
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">Bootstrap Playground</h1>
+        <h2 class="display-4">Buttons<span class="badge badge-success badge-pill">9</span></h2>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success disabled">Success Disabled</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button class ="btn btn-outline-warning btn-sm">Warning</button>
+        <button class ="btn btn-outline-danger btn-lg">Danger</button>
+        <button class="btn btn-primary">Updates <span class="badge badge-light">3</span></button>
+
+        <h3>Button Groups</h3>
+        <div class="btn-group" role="group">
+            <button class="btn btn-warning">One</button>
+            <button class="btn btn-warning">Two</button>
+            <button class="btn btn-warning">Three</button>
+        </div>
+
+        <h3>Alerts</h3>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">Oh No!</h4>
+            Danger!!!
+            <button aria-label="Close" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore rerum recusandae repellendus odio eius in nobis, neque, facilis praesentium explicabo vitae voluptate excepturi nemo asperiores accusamus inventore. Repellat, tempora.</p>
+        <blockquote>
+            <p class="mb-0 text-right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, asperiores.
+            </p>
+            <p class="blockquote-footer">
+                Mr. Lorem Ipsum
+            </p>
+        </blockquote>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
