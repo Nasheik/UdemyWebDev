@@ -1,0 +1,7 @@
+Middleware - Functions
+    - Access to Request/Response Objects
+    - Can Chain together or End HTTP Requests
+    - Parse Request and make changes if needed
+
+Morgan Middleware - Log HTTP Request Info to Terminal
+    - 
