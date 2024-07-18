@@ -2,11 +2,10 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const ejsMate = require('ejs-mate');
-const {campgroundSchema, reviewSchema} = require('./schemas')
+const session = require('express-session');
+const flash = require('connect-flash');
 const ExpressError = require('./Utilities/ExpressError')
 const methodOverride = require("method-override");
-const Campground = require("./Models/campground");
-const Review = require("./Models/review");
 const campgrounds = require("./Routes/campgrounds");
 const reviews = require("./Routes/reviews");
 
@@ -30,6 +29,27 @@ app.set('views', path.join(__dirname, 'Views'));
 
 app.use(express.urlencoded({extended:true}))
 app.use(methodOverride('_method'));
+
+app.use(express.static(path.join(__dirname, 'Public')));
+
+const sessionConfig = {
+    secret: 'thisshouldbesecret!',
+    resave: false,
+    saveUninitialized: true,
+    cookie: {
+        httpOnly: true,
+        expires: Date.now() + 1000*60*60*24*7,
+        maxAge: 1000*60*60*24*7,
+    }
+}
+app.use(session(sessionConfig));
+
+app.use(flash());
+app.use((req,res,next) => {
+    res.locals.success = req.flash('success');
+    res.locals.error = req.flash('error');
+    next();
+})
 
 
 app.use('/campgrounds',campgrounds);
