@@ -5,3 +5,7 @@ Middleware - Functions
 
 Morgan Middleware - Log HTTP Request Info to Terminal
     - 
+
+
+Authenitication - Who someone is
+Authorization - What permissions someone has
