@@ -20,7 +20,7 @@ const sample = array => array[Math.floor(Math.random()*array.length)]
 const seedDB = async ()=>
 {
     await Campground.deleteMany({});
-    for(let i = 0; i<50; i++)
+    for(let i = 0; i<300; i++)
     {
         const random1000 = Math.floor(Math.random() * 1000);
         const price = Math.floor(Math.random()*20)+10;
@@ -30,13 +30,17 @@ const seedDB = async ()=>
             title: `${sample(descriptors)} ${sample(places)}`,
             description: "Lorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem IpsummLorem Ipsumm",
             price,
+            geometry: {
+                type: 'Point',
+                coordinates: [ cities[random1000].longitude, cities[random1000].latitude ]
+            },
             images: [
                 {
-                    url: "https://res.cloudinary.com/dbcowtjst/image/upload/v1721612273/YelpCamp/byqvb7wgkizemni0o0ne.png",
+                    url: "https://res.cloudinary.com/dbcowtjst/image/upload/v1721612273/YelpCamp/tmi0bpyo51ecqxkfowz5.png",
                     filename : "YelpCamp/byqvb7wgkizemni0o0ne"
                 },
                 {
-                    url: "https://res.cloudinary.com/dbcowtjst/image/upload/v1721612273/YelpCamp/wsayycc4zredoawoduny.png",
+                    url: "https://res.cloudinary.com/dbcowtjst/image/upload/v1721612273/YelpCamp/px7ns7hdeeoomus9p7rp.png",
                     filename : "YelpCamp/wsayycc4zredoawoduny"
                 }
             ]
