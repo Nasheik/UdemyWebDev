@@ -3,7 +3,7 @@ const User = require('../Models/user');
 
 
 module.exports.renderRegister = (req,res) =>{
-    res.render('users/register');
+    res.render('Users/register');
 }
 
 module.exports.register = async(req,res)=>{
@@ -24,7 +24,7 @@ module.exports.register = async(req,res)=>{
 }
 
 module.exports.renderLogin = (req,res)=>{
-    res.render("users/login");
+    res.render("Users/login");
 }
 
 module.exports.login = (req,res)=>{
